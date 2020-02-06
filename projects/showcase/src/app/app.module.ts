@@ -2,7 +2,8 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
-import {MyLibModule} from "my-lib";
+import {MyFeatureModule} from "my-lib/my-feature";
+import {ExampleModule} from "my-lib";
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import {MyLibModule} from "my-lib";
   ],
   imports: [
     BrowserModule,
-    MyLibModule
+    MyFeatureModule,
+    ExampleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
